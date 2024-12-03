@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Checkout{% endblock %}
+
+{% block content %}
+
+    <div>
+        {% for product in products %}
+            <div class="grid">
+                <span>
+                    {{ product.name }}
+                </span>
+
+                <span>
+                    {{ product.price }}
+                </span>
+
+                <span>
+                    Qt
+                </span>
+
+                <span>
+                    Qt x unit price
+                </span>
+            </div>
+        {% endfor %}
+        <div class="grid">
+            <span>Total</span>
+            <span id="total">XXX</span>
+        </div>
+    </div>
+
+{% endblock %}
