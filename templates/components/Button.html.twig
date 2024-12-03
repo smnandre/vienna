@@ -1,3 +1,12 @@
-<button {{ attributes }}>
-    Hello {{ this.getPrefix() }} {{ this.label }}!
+<button {{ attributes }} data-controller="button"
+
+    data-action="button#increment"
+
+    data-button-title-value="My title"
+>
+    Hello {{ label }}
+
+    <span data-button-target="total">
+        0
+    </span>
 </button>
