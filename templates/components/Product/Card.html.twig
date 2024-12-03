@@ -1,0 +1,17 @@
+<article {{ attributes }}>
+    <div class="grid">
+
+        <img src="{{ this.image }}" alt="{{ this.title }}" />
+
+        <div style="grid-column: span 2">
+            <h1>{{ this.title }}</h1>
+            <p>{{ this.description }}</p>
+
+            <p>Price: {{ this.price }}</p>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</article>

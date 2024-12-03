@@ -15,6 +15,16 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+
+            <header>
+                Twig Component
+            </header>
+
+            <main class="container">
+                {% block content %}{% endblock %}
+            </main>
+
+        {% endblock %}
     </body>
 </html>

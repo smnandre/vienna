@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+
+    {% for product in products %}
+        <twig:Product:Card product="{{ product }}" />
+    {% endfor %}
+
+{% endblock %}
